@@ -1,0 +1,621 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box ; 
+    list-style-type: none; 
+    text-decoration: none;    
+}    
+.responsive {
+  display: none;
+}
+.hamburger {
+    display: none;
+     
+ } 
+ .hamburger span {
+    display: block; 
+    width: 39px; 
+    height: 5px; 
+     margin-bottom: 5px; 
+    
+     background-color: black; 
+     border-radius: 6px; 
+     transform-origin: 0 0 ; 
+     z-index: 1; 
+     transition: 0.5s; 
+    
+ } 
+ .hamburger:hover span:nth-child(2) {
+    transform: translateX(10px); 
+    background-color: #1064E5;
+ }  
+ .hamburger.is-active span:nth-child(1) {
+    transform: translate(0px , -2px ) rotate(45deg);
+ }  
+ .hamburger.is-active span:nth-child(3) {
+    transform: translate(-3px , 3px ) rotate(-45deg);
+ }  
+ .hamburger.is-active span:nth-child(2) {
+   opacity: 0; 
+   transform: translateX(15px);
+ }  
+
+ 
+
+
+ .menu {
+    display: none;
+ }
+
+.navbar nav{
+    display: flex; 
+    justify-content: space-around; 
+    padding-top: 2%;
+} 
+.navbar nav ul {
+    display: flex; 
+    justify-content: space-evenly; 
+    gap: 45px; 
+    padding-top: 18px; 
+    align-items:center ;
+} 
+.logo {
+    display: flex; 
+    align-items: center; 
+    gap: 10px;
+}  
+.nav-buttons {
+    display: flex; 
+    gap: 20px;
+}  
+.nav-buttons  button:nth-child(1) {
+    border: 2px solid rgb(37, 198, 226); 
+    background: transparent; 
+    padding: 6px 15px; 
+    border-radius: 20px; 
+    color: black; 
+    transition: all 0.4s; 
+    cursor:alias;
+} 
+.nav-buttons  button:nth-child(1):hover {
+    border: 2px solid rgb(37, 198, 226); 
+    background: rgb(37, 198, 226); 
+    padding: 6px 15px; 
+    border-radius: 20px; 
+    color: rgb(255, 255, 255); 
+    transition: all 0.4s ease;
+} 
+.nav-buttons  button:nth-child(2) {
+    border: 2px solid rgb(23, 39, 226); 
+    background: rgb(23, 39, 226); 
+    padding: 6px 15px; 
+    border-radius: 20px; 
+    color: rgb(255, 255, 255); 
+    transition: all 0.4s; 
+    cursor:alias;
+} 
+.nav-buttons  button:nth-child(2):hover{
+    border: 2px solid rgb(44, 51, 192); 
+    background: transparent; 
+    padding: 6px 15px; 
+    border-radius: 20px; 
+    color: rgb(0, 0, 0); 
+    transition: all 0.4s; 
+    cursor:alias;
+} 
+.navbar nav ul li a {
+    color: black; 
+   text-decoration: none;
+} 
+.navbar nav ul li a:hover {
+    color: rgb(0, 0, 0); 
+    display: block; 
+    width: 9
+    5px; 
+    height: 25px; 
+    background-color: aqua; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    transition: all 0.5s ease;
+}
+.top-text {
+    position: absolute;
+    width: 606px;
+    height: 21px;
+    left: calc(52% - 606px/2 - 314px);
+    top: 100px;
+    
+}  
+.text-top {
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 48px;
+/* or 400% */
+
+display: flex;
+align-items: center;
+
+/* black */
+
+color: #061224;
+
+opacity: 0.6;
+} 
+.text-top-2 {
+    font-family: 'IBM Plex Serif';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 42px;
+/* or 105% */
+
+display: flex;
+align-items: center;
+
+color: rgba(6, 18, 36, 0.9);
+
+
+} 
+.top-buttons {
+    display: flex; 
+    align-items: center; 
+    gap: 20px;
+}  
+.top-buttons-2 {
+    display: flex; 
+    gap: 5px;
+} 
+.top-buttons-2 button:nth-child(1) {
+    background: #E5E5E5;
+    border-radius: 23px; 
+    border: transparent; 
+    padding: 10px 15px;
+} 
+.top-buttons-2 button:nth-child(2) {
+    background: #E5E5E5;
+    border-radius: 23px; 
+    border: transparent; 
+    padding: 10px 15px;
+} 
+.top-buttons-2 button:nth-child(3) {
+    background: #E5E5E5;
+    border-radius: 23px; 
+    border: transparent; 
+    padding: 10px 15px;
+}
+.big-block {
+    display: flex; 
+    max-width: 1300px; 
+    padding: 20px; 
+    padding-left: 10.5%;
+    align-items: center; 
+    padding-top: 12%; 
+    gap: 65px;
+}
+.block-first {
+    max-width: 500px; 
+    
+} 
+.block-first p {
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+/* or 150% */
+
+
+color: rgba(6, 18, 36, 0.9);
+} 
+.block-first img {
+    width: 100%;
+} 
+.block-second {
+    max-width: 600px; 
+   
+}  
+.block-second img {
+    width: 100%;
+}   
+.block-second p {
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+/* or 150% */
+
+
+color: rgba(6, 18, 36, 0.9);
+
+}
+ 
+
+.middle-block {
+    max-width: 1400px; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}  
+.text-middle  {
+    text-align: center; 
+    font-family: 'IBM Plex Serif';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 23px;
+/* identical to box height, or 105% */
+ 
+
+color: rgba(6, 18, 36, 0.9);
+} 
+.icons {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px;
+} 
+.icons  ion-icon{
+    width: 28px;
+    height: 24.89px;
+}
+.written-block {
+    display: flex; 
+    justify-content: space-around; 
+    text-align: start;
+} 
+.first-tex h2 {
+    font-family: 'IBM Plex Serif';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 23px;
+/* or 105% */ 
+color: rgba(6, 18, 36, 0.9);
+} 
+.first-tex p {
+    color: rgba(6, 18, 36, 0.9); 
+    font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+} 
+.second-tex h2 {
+    font-family: 'IBM Plex Serif';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 23px; 
+color: #1064E5;
+} 
+.second-tex p {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+   
+    
+    color: rgba(6, 18, 36, 0.9);
+} 
+.contact {
+   
+width: 1440px;
+height: 298px;
+left: calc(50% - 1440px/2);
+top: 2143px;
+
+/* mint */
+
+background: #D8F1F0; 
+text-align: center; 
+align-items: center; 
+justify-content: center; 
+margin: auto; 
+} 
+.contact h1 {
+    padding-top: 40px ; 
+    font-family: 'IBM Plex Serif';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 48px;
+/* or 120% */
+
+text-align: center;
+
+color: rgba(6, 18, 36, 0.9);
+ } 
+ .contact p {
+    font-family: 'IBM Plex Serif';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 38px;
+/* or 120% */
+
+text-align: center;
+padding-top: 10px;
+color: rgba(6, 18, 36, 0.9);
+ } 
+ .input {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px; 
+    gap: 10px; 
+    display: inline-block;
+ } 
+ .input input {
+    background: white; 
+    border: 2px solid #1064E5; 
+    border-radius: 37px;  
+    width: 399px;
+height: 50px;
+left: 422px;
+top: 2337px;
+ } 
+ .input button {
+   
+width: 178px;
+height: 50px;
+color: #fff; 
+border: transparent;
+
+
+/* blue */
+
+background: #1064E5;
+border-radius: 41px
+ } 
+ .header-1 {
+    max-width: 1540px; 
+    min-height: 288px; 
+    background-color: black;
+ } 
+ .container-hd {
+    display: flex;
+    justify-content: space-around; 
+    color: #fff; 
+    padding-top: 50px;
+    
+ }  
+ .row-hd {
+    display: flex; 
+    justify-content: space-around; 
+    gap: 40px;
+ } 
+ .col h2{
+    float: right;
+ } 
+ .row-hd1 {
+    display: flex; 
+    gap: 60px;
+ } 
+ .row-hd1:nth-child(2) {
+      padding-bottom: 40px; 
+}
+.header-another {
+    flex-direction: column-reverse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:380px) {
+    .big-block {
+        display: block; 
+        max-width: 370px; 
+        padding: 20px; 
+        
+        align-items: center; 
+        padding-top: 12%; 
+        
+    }
+
+    .middle-block {
+        max-width: 370px; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+    }  
+    .text-middle  {
+        text-align: center; 
+        font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+    /* identical to box height, or 105% */
+     
+    
+    color: rgba(6, 18, 36, 0.9);
+    } 
+    .icons {
+        display: flex; 
+        justify-content: center; 
+        gap: 5px;
+    } 
+    .icons  ion-icon{
+        width: 18px;
+        height: 14.89px;
+    }
+    .written-block {
+        display: flex; 
+        gap: 20px;
+        text-align: start;
+    } 
+    .first-tex h2 {
+        font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+    /* or 105% */ 
+    color: rgba(6, 18, 36, 0.9);
+    } 
+    .first-tex p {
+        color: rgba(6, 18, 36, 0.9); 
+        font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 24px;
+    } 
+    .second-tex h2 {
+        font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px; 
+    color: #1064E5;
+    } 
+    .second-tex p {
+        font-family: 'IBM Plex Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+       
+        
+        color: rgba(6, 18, 36, 0.9);
+    }  
+    .contact {
+   
+        width: 370px;
+        height: 320px;
+       
+       
+        
+        /* mint */
+        
+        background: #D8F1F0; 
+        text-align: center; 
+        align-items: center; 
+        justify-content: center; 
+        margin: auto; 
+        } 
+        .contact h1 {
+            padding-top: 40px ; 
+            font-family: 'IBM Plex Serif';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 48px;
+        /* or 120% */
+        
+        text-align: center;
+        
+        color: rgba(6, 18, 36, 0.9);
+         } 
+         .contact p {
+            font-family: 'IBM Plex Serif';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 38px;
+        /* or 120% */
+        
+        text-align: center;
+        padding-top: 10px;
+        color: rgba(6, 18, 36, 0.9);
+         } 
+         .input {
+            display: block; 
+            flex-direction: column; 
+            flex-wrap: wrap; 
+            align-items: center; 
+            justify-content: center; 
+            margin: auto; 
+            text-align: center;
+         } 
+         .input input {
+            background: white; 
+            border: 2px solid #1064E5; 
+            border-radius: 37px;  
+            width: 299px;
+        height: 50px;
+        left: 422px;
+        top: 2337px;
+         } 
+         .input button {
+        text-align: center;
+        width: 178px;
+        height: 50px;
+        color: #fff; 
+        border: transparent;
+        justify-content: center;
+         
+        /* blue */
+        
+        background: #1064E5;
+        border-radius: 41px
+         }  
+         .header-1 {
+            max-width: 380px; 
+            min-height: 109vh; 
+            background-color: black; 
+            padding: 20px;
+          } 
+          .container-hd {
+            display: block;
+            flex-direction: column; 
+            flex-wrap: wrap;
+            color: #fff; 
+            padding-top: 50px;
+            
+         }  
+         .row-hd {
+            display: block; 
+            flex-direction: column;
+            width: 300px; 
+         } 
+         
+         .row-hd1 {
+            display: block; 
+            flex-direction: column; 
+            flex-wrap: wrap; 
+            float: left;
+         }   
+         .navbar {
+            display: none;
+         } 
+      
+         .responsive .logo {
+            padding-top: 40px;
+         } 
+         .hamburger {
+            display: block; 
+            padding-top: 50px;
+            padding-right: 15px;
+            z-index: 1; 
+            user-select: none; 
+            appearance: none; 
+            border: none; 
+            outline: none; 
+            background: none; 
+            float: right; 
+             
+         }  
+         .responsive {
+            display: flex; 
+            align-items: center; 
+            justify-content: space-around;
+        }
+} 
